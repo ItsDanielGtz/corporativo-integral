@@ -376,7 +376,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-slot@npm:^1.0.2":
+"@radix-ui/react-primitive@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@radix-ui/react-primitive@npm:1.0.3"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/react-slot": 1.0.2
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 9402bc22923c8e5c479051974a721c301535c36521c0237b83e5fa213d013174e77f3ad7905e6d60ef07e14f88ec7f4ea69891dc7a2b39047f8d3640e8f8d713
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-separator@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@radix-ui/react-separator@npm:1.0.3"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/react-primitive": 1.0.3
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 42f8c95e404de2ce9387040d78049808a48d423cd4c3bad8cca92c4b0bcbdcb3566b5b52a920d4e939a74b51188697f20a012221f0e630fc7f56de64096c15d2
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-slot@npm:1.0.2, @radix-ui/react-slot@npm:^1.0.2":
   version: 1.0.2
   resolution: "@radix-ui/react-slot@npm:1.0.2"
   dependencies:
@@ -1197,6 +1237,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "corporativo-integral@workspace:."
   dependencies:
+    "@radix-ui/react-separator": ^1.0.3
     "@radix-ui/react-slot": ^1.0.2
     "@types/node": ^20.14.2
     "@types/react": 18.2.66
@@ -1207,6 +1248,8 @@ __metadata:
     autoprefixer: ^10.4.19
     class-variance-authority: ^0.7.0
     clsx: ^2.1.1
+    embla-carousel-autoplay: 8.1.4
+    embla-carousel-react: ^8.1.4
     eslint: 8.57.0
     eslint-plugin-react-hooks: 4.6.0
     eslint-plugin-react-refresh: 0.4.6
@@ -1312,6 +1355,43 @@ __metadata:
   version: 1.4.798
   resolution: "electron-to-chromium@npm:1.4.798"
   checksum: 4ba9ef4bbe2c665a0e90a9944176aabc504fd14f3ebd70b96c5d7440d514010d2857875222801b1df19e5a44b9659774feb1d6d3bbf3b6c95a95b64afa5059f9
+  languageName: node
+  linkType: hard
+
+"embla-carousel-autoplay@npm:8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel-autoplay@npm:8.1.4"
+  peerDependencies:
+    embla-carousel: 8.1.4
+  checksum: 4d1bc29ec49496330dcd3785abfcfcbc615662bf6493a49e4bfe23ed8f2df160be90f2dacd233aa0ed50aeb9853a78af8f7d0ed6349362a4b34cd8cb9333f756
+  languageName: node
+  linkType: hard
+
+"embla-carousel-react@npm:^8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel-react@npm:8.1.4"
+  dependencies:
+    embla-carousel: 8.1.4
+    embla-carousel-reactive-utils: 8.1.4
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0
+  checksum: 075f37f0d0741282073276e5b700731dcd607788048f3932e8d56b36d268275466c956411df760f81b3d0b4808f5c191a51dce9db22c2b29eaabe334186f19d0
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel-reactive-utils@npm:8.1.4"
+  peerDependencies:
+    embla-carousel: 8.1.4
+  checksum: 88c3e9dbfbece5d490eae40d318979045ee50b2c406ecc298b3abc70ec59f4c8eef1677e1f51eb5669ca4535cf6e8004896d8584d4c246993c5dd31c4d623608
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel@npm:8.1.4"
+  checksum: 3f7692a374247344f87c7a5106974f0c50a11c11c9df32a38bba9250852bbc09e464f540706f9bb18f1dc5d7d25ef710e5d9a0ecb72602708c2624a057fc3598
   languageName: node
   linkType: hard
 

@@ -1,7 +1,9 @@
+import { CarouselHome } from "@/components/carruselHome";
+
 function Home() {
   return (
-    <div>
-      <p className="text-6xl">Hola</p>
+    <div className="flex">
+      <CarouselHome />
     </div>
   );
 }

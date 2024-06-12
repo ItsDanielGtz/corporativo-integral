@@ -17,9 +17,13 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "km-Image": "url('./src/assets/images/LogoKYM.png')",
+      },
       colors: {
         azul: "#0C1235",
         amarillo: "#FFCB08",
+        gris: "#FBFBFB",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
