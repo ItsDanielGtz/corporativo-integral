@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from "./components/layout";
 import Mission from "./pages/Mission";
+import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
 
 function App() {
   return (
@@ -14,8 +16,8 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/mission" element={<Mission />} />
               <Route path="/vision" element={<Home />} />
-              <Route path="/aboutUs" element={<Home />} />
-              <Route path="/services" element={<Home />} />
+              <Route path="/aboutUs" element={<AboutUs />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/language" element={<Home />} />
             </Route>
           </Routes>

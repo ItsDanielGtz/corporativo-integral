@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import tailwindcssAnimate from "tailwindcss-animate"
+export default  {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -17,6 +18,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        balo: ["baloo 2", "sans-serif"]
+      },
       backgroundImage: {
         "km-Image": "url('./src/assets/images/LogoKYM.png')",
       },
@@ -79,5 +83,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };

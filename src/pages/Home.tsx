@@ -1,9 +1,9 @@
-import { CarouselHome } from "@/components/carruselHome";
+// import { CarouselHome } from "@/components/carruselHome";
 
 function Home() {
   return (
     <div className="flex">
-      <CarouselHome />
+      {/* <CarouselHome /> */}
     </div>
   );
 }

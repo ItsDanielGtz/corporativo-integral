@@ -1,24 +1,66 @@
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/images/LogoKYM.png";
 import { navbarLinks } from "@/constants";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+
+import { Button } from "../ui/button";
+import { Globe, Menu } from "lucide-react";
 function Navbar() {
   const { pathname } = useLocation();
   return (
-    <nav className="bg-azul text-white flex w-full h-[80px]">
-      <div className="h-full">
-        <img className="h-[80px]" src={logo} />
+    <nav className="bg-azul text-white flex w-full h-[10%] ">
+      <div className="">
+        <img className="h-full" src={logo} alt="logo" />
       </div>
-      <div className="p-10 flex flex-1 items-center">
+      <div className="flex flex-1 items-center p-4 justify-end">
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button
+              variant="outline"
+              size="icon"
+              className="group ml-auto lg:hidden bg-azul hover:border-amarillo hover:bg-azul/45"
+            >
+              <Menu className="h-6 w-6 text-white group-hover:text-amarillo" />
+              <span className="sr-only">Toggle navigation menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-[250px]">
+            <ul className="flex flex-col justify-end w-full gap-4 py-6">
+              {navbarLinks.map((link) => {
+                const isActive = pathname === link.route;
+                return (
+                  <li key={link.label}>
+                    <NavLink
+                      to={link.route}
+                      key={link.route}
+                      className={` text-lg hover:border-b hover:border-amarillo  hover:text-amarillo   ${
+                        isActive
+                          ? "text-amarillo font-bold border-b border-amarillo"
+                          : " "
+                      }`}
+                    >
+                      {link.label}
+                    </NavLink>
+                  </li>
+                );
+              })}
+            </ul>
+          </SheetContent>
+        </Sheet>
+      </div>
+      <div className="hidden p-4 lg:flex flex-1 items-center lg:gap-4">
         <ul className="flex justify-end w-full gap-8">
           {navbarLinks.map((link) => {
             const isActive = pathname === link.route;
             return (
-              <li>
+              <li key={link.label}>
                 <NavLink
                   to={link.route}
                   key={link.route}
-                  className={`hover:text-amarillo ${
-                    isActive && "text-amarillo font-semibold"
+                  className={` text-lg hover:border-b hover:border-amarillo  hover:text-amarillo  ${
+                    isActive
+                      ? "text-amarillo font-bold border-b border-amarillo"
+                      : " "
                   }`}
                 >
                   {link.label}
@@ -27,6 +69,17 @@ function Navbar() {
             );
           })}
         </ul>
+      </div>
+      <div className="flex items-center p-4 pl-0">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="group ml-auto  bg-azul hover:border-amarillo hover:bg-azul/45"
+        >
+          <Globe className="h-6 w-6 text-white group-hover:text-amarillo" />
+          <span className="sr-only">Toggle navigation menu</span>
+        </Button>
+
       </div>
     </nav>
   );
