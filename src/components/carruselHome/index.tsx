@@ -1,13 +1,12 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
+import logo from "../../assets/images/LogoKYM.png";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 export function CarouselHome() {
@@ -18,25 +17,31 @@ export function CarouselHome() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-screen max-w-xl"
+      className="w-full h-[80dvh] overflow-hidden"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent className="flex flex-1 w-full">
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
+            <div className="">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+                <CardContent className="flex aspect-square items-start justify-start p-6">
+                  <img
+                    src={logo}
+                    width={700}
+                    height={700}
+                    alt="Carousel Image 1"
+                    className=" object-cover"
+                  />
                 </CardContent>
               </Card>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious />
+      <CarouselNext /> */}
     </Carousel>
   );
 }

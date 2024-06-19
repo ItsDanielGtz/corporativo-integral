@@ -1,4 +1,4 @@
-import containerImg from "@/assets/images/image1.webp";
+import containerImg from "@/assets/images/Carrousel2.jpeg";
 
 import { services } from "@/constants";
 
@@ -9,13 +9,16 @@ function Services() {
         <img
           src={containerImg}
           alt="container-img"
-          className="object-contain"
+          className="object-contain items-center justify-center"
         />
       </div>
       <div className="grid grid-cols-2 gap-x-4 pt-4 lg:col-span-7 lg:flex lg:flex-col lg-w-full">
         {services.map((service, index) => {
           return (
-            <div key={index} className=" flex border-b border-azul py-5  lg:first:pt-0 lg:py-5">
+            <div
+              key={index}
+              className=" flex border-b border-azul py-5  lg:first:pt-0 lg:py-5"
+            >
               <div className="text-amarillo font-bold pl-3 pr-6">
                 <service.icon />
               </div>
@@ -25,7 +28,7 @@ function Services() {
         })}
       </div>
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;

@@ -5,6 +5,7 @@ import Layout from "./components/layout";
 import Mission from "./pages/Mission";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
+import Vision from "./pages/Vision";
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
         <main className="flex h-screen">
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/mission" element={<Mission />} />
-              <Route path="/vision" element={<Home />} />
+              <Route path="/vision" element={<Vision />} />
               <Route path="/aboutUs" element={<AboutUs />} />
               <Route path="/services" element={<Services />} />
               <Route path="/language" element={<Home />} />

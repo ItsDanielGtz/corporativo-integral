@@ -1,7 +1,15 @@
-import { Mail } from "lucide-react";
+import {
+  Anchor,
+  Globe,
+  ArrowDownUp,
+  WalletCards,
+  FolderOpen,
+  Target,
+  Forklift,
+} from "lucide-react";
 
 export const navbarLinks = [
-  { route: "/home", label: "Home" },
+  { route: "/", label: "Home" },
   { route: "/mission", label: "Mission" },
   { route: "/vision", label: "Vision" },
   { route: "/aboutUs", label: "About Us" },
@@ -10,31 +18,31 @@ export const navbarLinks = [
 
 export const services = [
   {
-    icon: Mail,
+    icon: Globe,
     label: "International marketing",
   },
   {
-    icon: Mail,
-    label: "international marketing",
+    icon: Anchor,
+    label: "International Commercial Linkage",
   },
   {
-    icon: Mail,
-    label: "International marketing",
+    icon: ArrowDownUp,
+    label: "International Logistic Services",
   },
   {
-    icon: Mail,
+    icon: WalletCards,
     label: "International Commerce Consultancy",
   },
   {
-    icon: Mail,
+    icon: FolderOpen,
     label: "Preventive audits",
   },
   {
-    icon: Mail,
+    icon: Target,
     label: "Training Workshops",
   },
   {
-    icon: Mail,
+    icon: Forklift,
     label: "Development of logistic profiles",
   },
 ];

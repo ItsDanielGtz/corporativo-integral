@@ -79,7 +79,6 @@ function Navbar() {
           <Globe className="h-6 w-6 text-white group-hover:text-amarillo" />
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
-
       </div>
     </nav>
   );
