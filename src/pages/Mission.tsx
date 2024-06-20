@@ -1,11 +1,32 @@
 import { Separator } from "@/components/ui/separator";
-import logo from "../assets/images/LogoKYM.png";
-// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 function Mission() {
+
+  const {t, i18n} = useTranslation()
+
   return (
     <>
-      <div className="flex flex-col flex-1 items-start p-5 md:w-full md:p-0 relative lg:items-center">
+      <div
+        className="relative h-screen w-full bg-cover bg-center flex flex-col justify-center items-center text-white "
+        style={{
+          backgroundImage: "url('./src/assets/images/mision-image.jpg')",
+        }}
+      >
+        <div className=" bg-gradient-to-r from-gray-900/50 absolute inset-0" />
+
+        <div className="text-white absolute max-w-2xl flex ">
+          <div className=" px-5 py-6  w-full">
+            <h1 className="text-5xl font-bold mb-1 text-center">{t("mission.title")}</h1>
+            <Separator className="bg-azul" />
+            <p className="text-lg mb-8 font-semibold">
+              {t("mission.description")}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="flex flex-col flex-1 items-start p-5 md:w-full md:p-0 relative lg:items-center">
         <img
           src={logo}
           alt="Hero-Image"
@@ -25,28 +46,6 @@ function Mission() {
               logistic systems.
             </p>
           </div>
-        </div>
-      </div>
-      {/* <div className="fixed h-full w-full">
-        <img
-          src={logo}
-          alt="Hero-Image"
-          className="lg:hidden h-full w-full lg:object-contain items-start "
-          width={1920}
-          height={1080}
-        />
-        <div className="hidden absolute inset-0 bg-gray-900/40 from-gray-900/50 to-transparent" />
-        <div className="absolute top-0 lg:w-[30%] left-0 transform py-8 px-5 text-azul h-full">
-          <div className="flex flex-col md:w-1/2">
-            <h1 className="text-4xl font-bold mb-1  ">Mission</h1>
-            <Separator className="bg-azul" />
-            <p className="text-lg mb-8 font-semibold ">
-              To Provide international markets with Mexican products of the
-              highest quality through planning, coordination and professional
-              logistic systems.
-            </p>
-          </div>
-
         </div>
       </div> */}
     </>
