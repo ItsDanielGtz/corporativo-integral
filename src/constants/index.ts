@@ -46,3 +46,26 @@ export const services = [
     label: "Development of logistic profiles",
   },
 ];
+
+export const images = [
+  {
+    image: "./src/assets/images/carrousel-1.jpg",
+    alt: "image-carrousel1",
+  },
+  {
+    image: "./src/assets/images/carrousel-2.jpeg",
+    alt: "image-carrousel2",
+  },
+  {
+    image: "./src/assets/images/carrousel-3.jpeg",
+    alt: "image-carrousel3",
+  },
+  {
+    image: "./src/assets/images/carrousel-4.jpg",
+    alt: "image-carrousel4",
+  },
+  {
+    image: "./src/assets/images/carrousel-5.jpg",
+    alt: "image-carrousel5",
+  },
+];
