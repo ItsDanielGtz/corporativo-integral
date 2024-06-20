@@ -1,12 +1,33 @@
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assets/images/LogoKYM.png";
+import logo from "../../assets/KYM.ico";
 import { navbarLinks } from "@/constants";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 import { Button } from "../ui/button";
-import { Globe, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import Spanish from "@/assets/icons/spanish";
+import English from "@/assets/icons/English";
 function Navbar() {
   const { pathname } = useLocation();
+  const [language, setLanguage] = useState("es");
+  const { i18n } = useTranslation();
+
+
+  function onChangeLanguage() {
+    console.log(language)
+    setLanguage((language) => {
+      return language === "es" ? "en" : "es";
+    });
+  }
+  
+  useEffect(() => {
+    
+    i18n.changeLanguage(language)
+  },[i18n, language])
+
+
   return (
     <nav className="bg-azul text-white flex w-full h-[10%] ">
       <div className="">
@@ -74,9 +95,20 @@ function Navbar() {
         <Button
           variant="ghost"
           size="icon"
-          className="group ml-auto  bg-azul hover:border-amarillo hover:bg-azul/45"
+          className={`group ml-auto  bg-azul hover:border-amarillo hover:bg-azul/45`}
+          onClick={onChangeLanguage}
         >
-          <Globe className="h-6 w-6 text-white group-hover:text-amarillo" />
+          {/* <Globe
+            className={`h-6 w-6  group-hover:text-amarillo ${
+              language === "es" ? "text-white" : "text-amarillo"
+            }`}
+          /> */}
+          {language === "es" ? (
+            <Spanish className="hover:text-amarillo transition-all"/>
+          ): (
+            <English className="hover:text-amarillo transition-all"/>
+
+          )}
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
       </div>
