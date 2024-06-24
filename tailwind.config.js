@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-import tailwindcssAnimate from "tailwindcss-animate"
-export default  {
+import tailwindcssAnimate from "tailwindcss-animate";
+export default {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -19,10 +19,10 @@ export default  {
     },
     extend: {
       fontFamily: {
-        balo: ["baloo 2", "sans-serif"]
+        balo: ["baloo 2", "sans-serif"],
       },
       backgroundImage: {
-        "km-Image": "url('./src/assets/images/LogoKYM.png')",
+        "km-Image": "url('./src/assets/images/LogoKYM.webp')",
       },
       colors: {
         azul: "#0C1235",

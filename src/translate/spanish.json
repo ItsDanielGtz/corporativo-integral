@@ -2,5 +2,48 @@
   "mission": {
     "title": "Misión",
     "description": "Proveer a los mercados internacionales productos mexicanos de la más alta calidad a través de la planificación, coordinación y sistemas logísticos profesionales."
+  },
+
+  "vision": {
+    "title": "Visión",
+    "description": "Colocar a la empresa como la número uno en servicios integrales en comercio internacional gracias al compromiso y profesionalismo que nos permite crear vínculos de largo plazo con nuestros clientela."
+  },
+  "aboutUs": {
+    "title": "¿Quiénes somos?",
+    "description": "Somos una empresa que nace del placer de apoyar a los mexicanos. agricultores y artesanos en la Colocación, internacionalización o comercialización de sus productos."
+  },
+  "footer": {
+    "title": "Contáctenos",
+    "description": "Si tiene preguntas, críticas o sugerencias, por favor contáctenos directamente."
+  },
+  "services": {
+    "service1": {
+      "description": "Mercado internacional."
+    },
+    "service2": {
+      "description": "Vinculación Comercial Internacional."
+    },
+    "service3": {
+      "description": "Servicios Logísticos."
+    },
+    "service4": {
+      "description": "Internacionales Consultoría en Comercio."
+    },
+    "service5": {
+      "description": "Auditorías preventivas."
+    },
+    "service6": {
+      "description": "Talleres de formación."
+    },
+    "service7": {
+      "description": "Desarrollo de perfiles logísticos."
+    }
+  },
+  "navLinks": {
+    "home": "Inicio",
+    "mission": "Misión",
+    "vision": "Visión",
+    "aboutus": "Acerca de nosotros",
+    "services": "Servicios"
   }
 }

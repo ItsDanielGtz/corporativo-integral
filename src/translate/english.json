@@ -2,5 +2,49 @@
   "mission": {
     "title": "Mission",
     "description": "To Provide international markets with Mexican products of the highest quality through planning, coordination and professional logistic systems."
+  },
+  "vision": {
+    "title": "Vision",
+    "description": "To Place the company as the number one in integral services in commerce thanks to the commitment and professionalism that allows us to create long-term links with ourclients."
+  },
+  "aboutUs": {
+    "title": "Who we are?",
+    "description": "We are a company born from the pleassure of supporting Mexican farmers and artisans in the Placement, internationalization or commercialization of their products."
+  },
+  "footer": {
+    "title": "Contact us",
+    "description": "If you have questions, criticism or suggestions, please contact us directly."
+  },
+
+  "services": {
+    "service1": {
+      "description": "International marketing."
+    },
+    "service2": {
+      "description": "International Commercial Linkage."
+    },
+    "service3": {
+      "description": "International Logistic Services."
+    },
+    "service4": {
+      "description": "International Commerce Consultancy."
+    },
+    "service5": {
+      "description": "Preventive audits."
+    },
+    "service6": {
+      "description": "Training Workshops."
+    },
+    "service7": {
+      "description": "Development of logistic profiles."
+    }
+  },
+
+  "navLinks": {
+    "home": "Home",
+    "mission": "Mission",
+    "vision": "Vision",
+    "aboutus": "About Us",
+    "services": "Services"
   }
 }
