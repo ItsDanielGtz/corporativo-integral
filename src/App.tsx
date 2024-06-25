@@ -6,10 +6,12 @@ import Mission from "./pages/Mission";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Vision from "./pages/Vision";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
+  const helmetContext = {}
   return (
-    <>
+    <HelmetProvider context={helmetContext}>
       <BrowserRouter>
         <main className="flex h-screen">
           <Routes>
@@ -24,7 +26,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-    </>
+    </HelmetProvider>
   );
 }
 
