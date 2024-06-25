@@ -13,7 +13,7 @@ function Services() {
         description={t("seo.services.description")}
         keywords={[t("seo.services.keywords", { joinArrays: "," })]}
       />
-      <div className="flex flex-col  py-8 px-12 lg:gap-16 lg:grid lg:grid-cols-12">
+      <div className="flex flex-col  py-5 px-5 lg:px-12 lg:py-8 lg:gap-16 lg:grid lg:grid-cols-12">
         <div className="lg:col-span-5 ">
           <img
             src={containerImg}
@@ -37,9 +37,9 @@ function Services() {
                     <div className="text-amarillo font-bold pl-3 pr-6">
                       <Icon />
                     </div>
-                    <div className=" flex-1 ">
+                    <p className=" flex-1 ">
                       {t(`services.${key}.description`)}
-                    </div>
+                    </p>
                   </div>
                 );
               })}
