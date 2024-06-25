@@ -49,7 +49,7 @@ function Footer() {
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={coordsTuple}>
               <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                Israel 212-306, Tepeyac, 37378 León de los Aldama, Gto.
               </Popup>
             </Marker>
           </MapContainer>
