@@ -45,5 +45,46 @@
     "vision": "Visión",
     "aboutus": "Acerca de nosotros",
     "services": "Servicios"
+  },
+  "seo": {
+    "home": {
+      "title": "Corporativo Integral K&M del Bajío: Tu Socio en Negocios Internacionales. | K&M",
+      "description": "Bienvenido a Corporativo Integral K&M del Bajío, tu socio en negocios internacionales. Nos especializamos en facilitar el comercio internacional con servicios integrales y soluciones personalizadas para optimizar tus operaciones globales.",
+      "keywords": ["K&M", "Corporativo"]
+    },
+    "mission": {
+      "title": "Nuestra Misión: Excelencia en Productos Mexicanos para Mercados Globales. | K&M",
+      "description": "Descubre la misión de Corporativo Integral K&M del Bajío. Conoce cómo trabajamos para proveer a los mercados internacionales productos mexicanos de la más alta calidad a través de la planificación, coordinación y sistemas logísticos profesionales.",
+      "keywords": [
+        "Productos mexicanos",
+        "calidad",
+        "Mercados internacionales",
+        "planificación logística"
+      ]
+    },
+    "vision": {
+      "title": "Nuestra Visión: Líderes en Servicios Integrales en Comercio Internacional | K&M",
+      "description": "Descubre la visión de Corporativo Integral K&M del Bajío. Nos esforzamos por ser líderes en servicios integrales en comercio internacional, comprometidos con el profesionalismo y la creación de vínculos duraderos con nuestros clientes.",
+      "keywords": [
+        "Servicios integrales en comercio internacional",
+        "Compromiso con el cliente",
+        "Profesionalismo empresarial"
+      ]
+    },
+    "aboutUs": {
+      "title": "¿Quienes somos?: Comprometidos con la Excelencia en Comercio Internacional | K&M",
+      "description": "Aprende más sobre nosotros, Descubre quienes somos en Corporativo Integral K&M del Bajío  ",
+      "keywords": ["acerca de nosotros", "equipo", "historia"]
+    },
+    "services": {
+      "title": "Servicios: Vinculación Comercial, Logística y Consultoría en Comercio | K&M",
+      "description": "Descubre nuestros servicios internacionales en Corporativo Integral K&M del Bajío. Especializados en vinculación comercial, servicios logísticos, consultoría en comercio internacional, auditorías preventivas y formación en comercio exterior.",
+      "keywords": [
+        "Mercado internacional",
+        "Servicios logísticos internacionales",
+        "Importación y exportación",
+        "Comercio global y logística"
+      ]
+    }
   }
 }
