@@ -1,11 +1,7 @@
 import { Separator } from "../ui/separator";
-import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
-import type { LatLngTuple } from "leaflet";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
-  const position: number[] = [21.112957, -101.668228];
-  const coordsTuple: LatLngTuple = [position[0], position[1]];
   const { t } = useTranslation();
   return (
     <div>
@@ -34,25 +30,17 @@ function Footer() {
               <label htmlFor="">+52 (477) 352 7292</label>
             </div>
           </div>
-          <MapContainer
-            center={coordsTuple}
-            zoom={15}
-            scrollWheelZoom={false}
-            style={{
-              height: "100%",
-              width: "100%",
-              maxWidth: "300px",
-              minHeight: "150px",
-              display: "flex",
-            }}
-          >
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={coordsTuple}>
-              <Popup>
-                Israel 212-306, Tepeyac, 37378 León de los Aldama, Gto.
-              </Popup>
-            </Marker>
-          </MapContainer>
+          <div className="flex justify-center ">
+            <iframe
+              title="ubicación"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.6542995295165!2d-101.66883469787797!3d21.113379474623066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbfa943f01f9b%3A0xac003878ba15bfcf!2sIsrael%20212-306%2C%20Tepeyac%2C%2037378%20Le%C3%B3n%20de%20los%20Aldama%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1719323662270!5m2!1ses-419!2smx"
+              style={{ border: "0" }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full flex"
+            />
+          </div>
         </div>
       </footer>
     </div>
