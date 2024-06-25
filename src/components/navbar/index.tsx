@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <nav className="bg-azul text-white flex w-full h-[10%] ">
       <div className="">
-          <img className="h-full " src={logo} alt="logo" />
+        <img className="h-full " src={logo} alt="logo" />
       </div>
       <div className="flex flex-1 items-center p-4 justify-end">
         <Sheet>
@@ -94,11 +94,7 @@ function Navbar() {
           className={`group ml-auto  bg-azul hover:border-amarillo hover:bg-azul/45`}
           onClick={onChangeLanguage}
         >
-          {language === "es" ? (
-            <Spanish />
-          ) : (
-            <English className="hover:text-amarillo transition-all text-white" />
-          )}
+          {language === "es" ? <Spanish /> : <English />}
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
       </div>
