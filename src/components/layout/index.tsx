@@ -1,7 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../navbar";
-
-import "leaflet/dist/leaflet.css";
 import Footer from "../footer";
 
 function Layout() {
