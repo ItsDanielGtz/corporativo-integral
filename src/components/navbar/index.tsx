@@ -95,7 +95,7 @@ function Navbar() {
           onClick={onChangeLanguage}
         >
           {language === "es" ? (
-            <Spanish className="hover:text-amarillo transition-all text-white" />
+            <Spanish />
           ) : (
             <English className="hover:text-amarillo transition-all text-white" />
           )}
