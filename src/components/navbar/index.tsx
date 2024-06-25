@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <nav className="bg-azul text-white flex w-full h-[10%] ">
       <div className="">
-        <img className="h-full" src={logo} alt="logo" />
+          <img className="h-full w-full" src={logo} alt="logo" />
       </div>
       <div className="flex flex-1 items-center p-4 justify-end">
         <Sheet>

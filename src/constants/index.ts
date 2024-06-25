@@ -7,6 +7,11 @@ import {
   Target,
   WalletCards,
 } from "lucide-react";
+import imgCarrousel1 from "@/assets/images/carrousel-1-5.webp";
+import imgCarrousel2 from "@/assets/images/carrousel-2.webp";
+import imgCarrousel3 from "@/assets/images/carrousel-3.webp";
+import imgCarrousel4 from "@/assets/images/carrousel-4.webp";
+import imgCarrousel5 from "@/assets/images/carrousel-5.webp";
 
 export const navbarLinks = [
   { route: "/", label: "home" },
@@ -51,23 +56,23 @@ export const services = [
 
 export const images = [
   {
-    image: "./src/assets/images/carrousel-1-5.webp",
+    image: imgCarrousel1,
     alt: "image-carrousel",
   },
   {
-    image: "./src/assets/images/carrousel-2.webp",
+    image: imgCarrousel2,
     alt: "image-carrousel2",
   },
   {
-    image: "./src/assets/images/carrousel-3.webp",
+    image: imgCarrousel3,
     alt: "image-carrousel3",
   },
   {
-    image: "./src/assets/images/carrousel-4.webp",
+    image: imgCarrousel4,
     alt: "image-carrousel4",
   },
   {
-    image: "./src/assets/images/carrousel-5.webp",
+    image: imgCarrousel5,
     alt: "image-carrousel5",
   },
 ];

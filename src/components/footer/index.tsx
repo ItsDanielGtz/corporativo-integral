@@ -11,7 +11,7 @@ function Footer() {
     <div>
       <footer className="bg-[#0C1235] text-white p-6 md:py-12 w-full">
         <div className="flex flex-col">
-          <h3 className="text-2xl font-semibold">{t("footer.title")}</h3>
+          <h2 className="text-2xl font-semibold">{t("footer.title")}</h2>
           <Separator />
           <p className="py-4 ">{t("footer.description")}</p>
         </div>
