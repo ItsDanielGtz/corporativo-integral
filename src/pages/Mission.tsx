@@ -1,15 +1,17 @@
 import { Separator } from "@/components/ui/separator";
 import { useTranslation } from "react-i18next";
+import imgMission from "@/assets/images/mision-image.webp"
 
 function Mission() {
   const { t } = useTranslation();
 
   return (
     <>
+      <link rel="preload" href="./src/assets/images/mision-image.webp" as="image" />
       <div
-        className="relative h-screen w-full bg-cover bg-center flex flex-col justify-center items-center text-white "
+        className="relative h-screen w-full bg-cover  bg-center flex flex-col justify-center items-center text-white "
         style={{
-          backgroundImage: "url('./src/assets/images/mision-image.webp')",
+          backgroundImage: `url(${imgMission})`,
         }}
       >
         <div className=" bg-gradient-to-r from-gray-900/50 absolute inset-0" />

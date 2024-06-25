@@ -1,5 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { useTranslation } from "react-i18next";
+import imgVision from "@/assets/images/vision-image-2.webp"
+
 
 function Vision() {
   const { t } = useTranslation();
@@ -8,7 +10,7 @@ function Vision() {
       <div
         className="relative h-screen w-full bg-cover bg-center flex flex-col justify-center items-center text-white "
         style={{
-          backgroundImage: "url('./src/assets/images/vision-image-2.webp')",
+          backgroundImage: `url(${imgVision})`,
         }}
       >
         <div className="bg-gradient-to-r from-gray-900/80 absolute inset-0" />
