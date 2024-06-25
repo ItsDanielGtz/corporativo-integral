@@ -11,8 +11,9 @@ import English from "@/assets/icons/English";
 import { navbarLinks } from "@/constants";
 function Navbar() {
   const { pathname } = useLocation();
-  const [language, setLanguage] = useState("es");
   const { i18n, t } = useTranslation();
+
+  const [language, setLanguage] = useState(i18n.language );
 
   function onChangeLanguage() {
     setLanguage((language) => {
@@ -91,7 +92,7 @@ function Navbar() {
         <Button
           variant="ghost"
           size="icon"
-          className={`group ml-auto  bg-azul hover:border-amarillo hover:bg-azul/45`}
+          className="group ml-auto  bg-azul hover:border-amarillo hover:bg-azul/45"
           onClick={onChangeLanguage}
         >
           {language === "es" ? <Spanish /> : <English />}
