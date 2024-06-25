@@ -13,7 +13,7 @@ function Navbar() {
   const { pathname } = useLocation();
   const { i18n, t } = useTranslation();
 
-  const [language, setLanguage] = useState(i18n.language );
+  const [language, setLanguage] = useState(i18n.language);
 
   function onChangeLanguage() {
     setLanguage((language) => {
