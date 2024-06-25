@@ -1,11 +1,17 @@
 import { Separator } from "@/components/ui/separator";
 import logo from "../assets/images/LogoKYM.webp";
 import { useTranslation } from "react-i18next";
+import Seo from "@/components/Seo";
 
 function AboutUs() {
   const { t } = useTranslation();
   return (
     <>
+      <Seo
+        title={t("seo.aboutUs.title")}
+        description={t("seo.aboutUs.description")}
+        keywords={[t("seo.aboutUs.keywords", {joinArrays: ","} )]}
+      />
       <div className="flex flex-col flex-1 items-start p-5 md:w-full md:p-0 relative lg:items-center">
         <img src={logo} alt="Hero-Image" className="h-full w-full" />
 

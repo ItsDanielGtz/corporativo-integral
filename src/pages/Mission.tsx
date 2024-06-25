@@ -1,13 +1,18 @@
 import { Separator } from "@/components/ui/separator";
 import { useTranslation } from "react-i18next";
 import imgMission from "@/assets/images/mision-image.webp"
+import Seo from "@/components/Seo";
 
 function Mission() {
   const { t } = useTranslation();
 
   return (
     <>
-      <link rel="preload" href="./src/assets/images/mision-image.webp" as="image" />
+      <Seo
+        title={t("seo.mission.title")}
+        description={t("seo.mission.description")}
+        keywords={[t("seo.mission.keywords", {joinArrays: ","} )]}
+      />
       <div
         className="relative h-screen w-full bg-cover  bg-center flex flex-col justify-center items-center text-white "
         style={{

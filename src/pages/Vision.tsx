@@ -1,12 +1,17 @@
 import { Separator } from "@/components/ui/separator";
 import { useTranslation } from "react-i18next";
-import imgVision from "@/assets/images/vision-image-2.webp"
-
+import imgVision from "@/assets/images/vision-image-2.webp";
+import Seo from "@/components/Seo";
 
 function Vision() {
   const { t } = useTranslation();
   return (
     <>
+      <Seo
+        title={t("seo.vision.title")}
+        description={t("seo.vision.description")}
+        keywords={[t("seo.vision.keywords", {joinArrays: ","} )]}
+      />
       <div
         className="relative h-screen w-full bg-cover bg-center flex flex-col justify-center items-center text-white "
         style={{
