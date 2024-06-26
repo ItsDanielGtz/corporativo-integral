@@ -12,6 +12,11 @@ import imgCarrousel2 from "@/assets/images/carrousel-2.webp";
 import imgCarrousel3 from "@/assets/images/carrousel-3.webp";
 import imgCarrousel4 from "@/assets/images/carrousel-4.webp";
 import imgCarrousel5 from "@/assets/images/carrousel-5.webp";
+import imgCarrousel6 from "@/assets/images/Carrousel-Avion.webp";
+import imgCarrousel7 from "@/assets/images/Carrousel-Barco.webp";
+import imgCarrousel8 from "@/assets/images/Carrousel-Mapa.webp";
+import imgCarrousel9 from "@/assets/images/Carrousel-Bandera.webp";
+import imgCarrousel10 from "@/assets/images/Carrousel-Verduras.webp";
 
 export const navbarLinks = [
   { route: "/", label: "home" },
@@ -72,7 +77,27 @@ export const images = [
     alt: "image-carrousel4",
   },
   {
+    image: imgCarrousel8,
+    alt: "image-carrousel8",
+  },
+  {
     image: imgCarrousel5,
     alt: "image-carrousel5",
+  },
+  {
+    image: imgCarrousel6,
+    alt: "image-carrousel6",
+  },
+  {
+    image: imgCarrousel7,
+    alt: "image-carrousel7",
+  },
+  {
+    image: imgCarrousel9,
+    alt: "image-carrousel9",
+  },
+  {
+    image: imgCarrousel10,
+    alt: "image-carrousel10",
   },
 ];
