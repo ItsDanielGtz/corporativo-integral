@@ -30,15 +30,13 @@ function Footer() {
               <label htmlFor="">+52 (477) 352 7292</label>
             </div>
           </div>
-          <div className="flex justify-center ">
+          <div className="flex justify-center lg:max-w-96 w-full">
             <iframe
-              title="ubicación"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.6542995295165!2d-101.66883469787797!3d21.113379474623066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbfa943f01f9b%3A0xac003878ba15bfcf!2sIsrael%20212-306%2C%20Tepeyac%2C%2037378%20Le%C3%B3n%20de%20los%20Aldama%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1719323662270!5m2!1ses-419!2smx"
-              style={{ border: "0" }}
-              allowFullScreen={false}
+            className="w-full h-full "
+            title="ubicación"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.909902594692!2d-101.66128392575814!3d21.116157884773035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbe5506730ee9%3A0x75c575d814b540d6!2sBlvd.%20Adolfo%20L%C3%B3pez%20Mateos%201702%2C%20Zona%20Recreativa%20y%20Cultural%2C%2037500%20Le%C3%B3n%20de%20los%20Aldama%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1720299443902!5m2!1ses-419!2smx"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full flex"
             />
           </div>
         </div>
