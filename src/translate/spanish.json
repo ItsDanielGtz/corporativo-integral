@@ -13,7 +13,7 @@
     "description": "Somos una empresa que nace del placer de apoyar a los mexicanos. agricultores y artesanos en la Colocación, internacionalización o comercialización de sus productos."
   },
   "footer": {
-    "title": "Contáctenos",
+    "title": "Contacto",
     "description": "Si tiene preguntas, críticas o sugerencias, por favor contáctenos directamente."
   },
   "services": {
@@ -24,10 +24,10 @@
       "description": "Vinculación Comercial Internacional."
     },
     "service3": {
-      "description": "Servicios Logísticos."
+      "description": "Servicios Logísticos Internacionales."
     },
     "service4": {
-      "description": "Internacionales Consultoría en Comercio."
+      "description": "Consultoría en Comercio Exterior."
     },
     "service5": {
       "description": "Auditorías preventivas."
